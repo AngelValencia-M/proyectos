@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: serif;
 }
 
 
@@ -11,25 +12,26 @@
     background-attachment:fixed;
     background-blend-mode: soft-light;
     background-position: center;
-    background-size: cover;   
-    width: 100%; 
-    height: calc(100vh - 50px);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh -60px);
     }   
 
 
 .inicio{
     margin-top: 50px;
-    margin-left: 30%;
+    margin-left: 29%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 5px black;
     width: 50%;
     height: 60px;
+    
 }
 
-.titulo{
-    color: white;
+.titulo{    
+    color:#ffff;
+    
 }
 
 /* contenedor de form */
@@ -44,16 +46,15 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    box-shadow: 5px 90px 90px rgba(0, 0, 0, .9);
+    box-shadow: 10px 5px 60px rgba(0, 0, 0, .9);
     border-radius: 20px;
 }
 
 /* imagen svg */
 
 .cont-svg{
-    
     position: absolute;
-    margin-left: 65%;   
+    margin-left: 55%;   
 }
 
 
@@ -63,16 +64,16 @@
     position: absolute;
     transform: translateY(-150%);
     margin-top: -35px;
-    margin-left:20%;
+    margin-left:18%;
     display: flex;
     border-radius: 50%;
-    border-style:dashed;
+    border-style:solid;
 }
 
 .svg-config{
     width: 200px;
     height: 200px;
-    border-bottom: 3px  dotted rgba(0, 0, 0, 10);
+    border-bottom: 3px   rgba(0, 0, 0, 10);
     
 }
 
@@ -113,14 +114,28 @@ text-align: left;
 .bottonIniciar{
     margin-top: 30px;
     position: absolute;
-    margin-left: 20%;
+    margin-left: 17.9%;
+
+    
 }
 
 /* pendiente color y fuente */
 .botonCont{
-    font-size: 15px;
-    width: 100px;
-    height: 30px;
+    width: 105px;
+    height: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 8px 5px 8px 5px;
+    border: 2px solid #0016b0;
+}
+
+.botonCont:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+
 }
 /* enlaces */
 .enlaces{
@@ -135,10 +150,12 @@ text-align: left;
     position: absolute;
     display: inline-block;
     margin-left: -100%;
+    text-decoration: none;
 }
 
-.enlacesAyuda{
-    margin-left: 200%;
-
+.enlacesAyuda:link, .enlacesAyuda:visited,.enlacesAyuda:hover{
+    margin-left: 300%;
+    text-decoration: none;
 }
+
 
